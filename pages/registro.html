@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro 40K</title>
+    <link rel="shortcut icon" href="../media/warhammer.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script:wght@700&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Oleo+Script:wght@700&family=Tapestry&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span>
+            <a href="../index.html"><img class="imgLogo" src="../media/logo.png" alt=""></a>
+        </span>
+        <!--<div id="logIn">
+                <a href="#"><strong>LOGIN</strong></a>
+        </div>-->
+        <nav id="navBar">
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a> 
+                    <a href="razas.html">Razas</a>
+                    <a href="marines.html">Marines Espaciales</a> 
+                    <a href="bestsellers.html">Best Sellers</a> 
+                    <a href="registro.html">Registro</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="sectionRegistro"> 
+        <h1>Registro</h1>
+        <h2>Hola!</h2></center>
+        <h3>No tenes cuenta? Registrate!</h3>
+        <form id="formulario" action="" method="GET" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Completa el formulario</legend>
+                <label for="name">Nombre:</label>
+                <br>
+                <input type="text" name="name" placeholder="Nombre" required>
+                <br>
+                <label for="surname">Apellido:</label>
+                <br>
+                <input type="text" name="surname" placeholder="Apellido" required>
+                <br>
+                <label for="sex">Sexo:</label>
+                <br>
+                <input type="radio" name="sex" id="Masculino" value="Masculino">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="sex" id="Femenino" value="Femenino">
+                <label for="Femenino">Femenino</label>
+                <br>
+                <br>
+                <label for="username">Nombre de Usuario:</label>
+                <br>
+                <input type="text" name="username" placeholder="Username" required>
+                <br>
+                <label for="pass">Password:</label>
+                <br>
+                <input type="password" name="pass" placeholder="Password" required>
+                <br>
+                <label for="mail">Mail:</label>
+                <br>
+                <input type="email" name="mail" required>
+                <br>
+                <br>
+                <label for="legion">Legión Preferida:</label>
+                <select name="legion" id="">
+                    <option value="Opcion 1">Lobos Espaciales</option>
+                    <option value="Opcion 2">Puños Imperiales</option>
+                    <option value="Opcion 3">Salamandras</option>
+                </select>
+                <br>
+                <br>
+                <label for="news">Desea recibir novedades?</label>
+                <input type="checkbox" name="news" id="">
+                <br>
+                <br>
+                <label for="comments">Comentarios:</label>
+                <br>
+                <textarea name="Comentarios" id="" cols="30" rows="10"></textarea>
+                <br>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </fieldset>
+        </form>
+    </section>
+    <footer id="foot">
+        <ul>
+            <li>
+                <a href="www.facebook.com">Facebook</a>
+                <a href="www.instagram.com">Instagram</a>
+                <a href="www.twitter.com">Twitter</a>
+            </li>
+        </ul>
+    </footer>
+</body>
