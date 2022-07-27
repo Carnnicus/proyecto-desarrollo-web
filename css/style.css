@@ -82,6 +82,8 @@ p{
     font-family: 'Bebas Neue';
     font-weight: bold;
     grid-area: p;
+    animation-duration: 3s;
+    animation-name: slidein;
     
 }
 
@@ -259,6 +261,18 @@ img{
 #formulario{
     font-family: 'Bebas Neue';
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 @media screen and (min-width: 320px){
 
