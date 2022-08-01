@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <title>Warhammer 40K</title>
     <link rel="shortcut icon" href="media/warhammer.jpg">
     <link rel="stylesheet" href="css/style.css">
@@ -16,23 +17,22 @@
 </head>
 <body>
     <header>
-        <span>
-            <a href="index.html"><img class="imgLogo" src="media/logo.png" alt="logo 40k"></a>
-        </span>
-        <!--<div id="logIn">
-                <a href="#"><strong>LOGIN</strong></a>
-        </div>-->
-        <nav id="navBar">
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a> 
-                    <a href="pages/razas.html">Razas</a>
-                    <a href="pages/marines.html">Marines Espaciales</a> 
-                    <a href="pages/bestsellers.html">Best Sellers</a> 
-                    <a href="pages/registro.html">Registro</a> 
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="imgLogo" src="media/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/razas.html">Razas</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/marines.html">Marines Espaciales</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/bestsellers.html">Best Sellers</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/registro.html">Registro</a></li>
+                    </div>
+                </div>
+            </div>
     </header>
     <section class="sectionIndex">
         <h1>Introducción a 40K</h1>
@@ -52,5 +52,5 @@
             </li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>

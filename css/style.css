@@ -3,22 +3,14 @@ body{
 }
 
 header{
-    display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: repeat(2, 1fr);    
-    grid-template-areas: 
-    "logo . ."
-    ". nav ."
-    ;
     background-color: rgb(136, 4, 4);
-    height: 130px;
     font-family: 'Black Ops One';
 }
 
 .imgLogo{
     height: 50px;
     width: 120px;
-    grid-area: logo;
+    /**grid-area: logo;**/
 }
 
 /**#logIn{
@@ -34,7 +26,7 @@ header{
     color: aliceblue;
 }**/
 
-#navBar{
+/**#navBar{
     display: flex;
     justify-content: space-around;
     grid-area: nav;
@@ -52,7 +44,7 @@ header{
 
 #navBar li a:hover{
     color: aliceblue;
-}
+}**/
 
 .sectionIndex{
     display: grid;
@@ -70,7 +62,8 @@ header{
     display: flex;
     justify-content:center;
     height: 100px;
-    padding-top: 60px;
+    padding-top: 30px;
+    color: black;
     font-family: 'Black Ops One';
     grid-area: h1;
 }
@@ -84,12 +77,13 @@ p{
     grid-area: p;
     animation-duration: 3s;
     animation-name: slidein;
+    color: black;
     
 }
 
-img{
+/**img{
     width: 100%;
-}
+}**/
 
 /*.sectionIndex article p{
     padding-bottom: 20px;
@@ -161,6 +155,7 @@ img{
     padding-top: 50px;
     justify-content: center;
     font-family: 'Black Ops One';
+    color: black;
 }
 
 #razasMenu li a:hover{
@@ -276,11 +271,11 @@ img{
 
 @media screen and (min-width: 320px){
 
-    header{
+    /**header{
        font-size: 25px;
        height: 160px;
        padding-bottom: 80px;
-    }
+    }**/
     
 
     p{
@@ -296,10 +291,10 @@ img{
         justify-content: flex-start;
     }
 
-    img{
+    /**img{
         width: 50%;
         justify-content: flex-start;
-    }
+    }**/
 
        
         
@@ -325,9 +320,9 @@ img{
         justify-content: center;
     }
 
-    img{
+    /**img{
         width: 96%;
         justify-content: center;
-    }
+    }**/
 }
     
