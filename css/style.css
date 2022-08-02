@@ -221,11 +221,13 @@ p{
     padding-top: 20px;
     text-align: center;
     font-family: 'Black Ops One';
+    color: black;
 }
 
 #sectionBooks h3{
-    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: 'Black Ops One';
+    color: black;
 }
 
 #bookList{
@@ -255,10 +257,12 @@ p{
 #sectionRegistro h1, h2, h3{
     text-align: center;
     font-family: 'Black Ops One';
+    color: black;
 }
 
 #formulario{
     font-family: 'Bebas Neue';
+    color: black;
 }
 
 @keyframes slidein {
