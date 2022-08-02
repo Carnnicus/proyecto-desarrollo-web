@@ -187,10 +187,12 @@ p{
     padding-top: 50px;
     text-align: center;
     font-family: 'Black Ops One';
+    color: black;
 }
 
 #sectionMarines h2{
     font-family: 'Black Ops One';
+    color: black;
 }
 
 #legiones{
@@ -199,10 +201,12 @@ p{
 
 #legiones th{
     font-family: 'Black Ops One';
+    color: black;
 }
 
 #legiones td{
     font-family: 'Bebas Neue';
+    color: black;
 }
 
 #depurado{

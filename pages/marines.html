@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <title>Marines Espaciales</title>
     <link rel="shortcut icon" href="../media/warhammer.jpg">
     <link rel="shortcut icon" href="media/warhammer.jpg">
@@ -17,37 +18,39 @@
 </head>
 <body>
     <header>
-        <span>
-            <a href="../index.html"><img class="imgLogo" src="../media/logo.png" alt="logo 40k"></a>
-        </span>
-        <!--<div id="logIn">
-                <a href="#"><strong>LOGIN</strong></a>
-        </div>-->
-        <nav id="navBar">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a> 
-                    <a href="razas.html">Razas</a>
-                    <a href="marines.html">Marines Espaciales</a> 
-                    <a href="bestsellers.html">Best Sellers</a> 
-                    <a href="registro.html">Registro</a> 
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="imgLogo" src="../media/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../pages/razas.html">Razas</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../pages/marines.html">Marines Espaciales</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../pages/bestsellers.html">Best Sellers</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../pages/registro.html">Registro</a></li>
+                    </div>
+                </div>
+            </div>
     </header>
     <section id="sectionMarines">
         <article>
                 <h1>Marines Espaciales</h1>
             <h2><strong>Legiones</strong></h2>
             <br>
-            <table id="legiones" border="1">
+            <table id="legiones" class="table">
                 <th>Número</th>
                 <th>Legión</th>
                 <th>Primarca</th>
                 <tr>
                     <td>I</td>
-                    <td>Angeles Oscuros</td>
-                    <td>Lion El'Jonson</td>
+                    <td><abbr title="Los Ángeles Oscuros (Dark Angels en inglés) fueron la Primera Legión de Marines Espaciales creada por el Emperador para su Gran Cruzada. Su Primarca era Lion El'Jonson. La Legión se mantuvo en el bando leal durante la Herejía de Horus, y tras esta, se reorganizó según el Codex Astartes y se dividió en Capítulos. Hoy día, los Ángeles Oscuros son considerados uno de los mejores Capítulos, siendo especialmente respetada el Ala de Muerte. Sólo los miembros más importantes del Capítulo de los Ángeles Oscuros conocen el terrible e ignominioso secreto de lo sucedido hace diez mil años, un secreto que ha llevado a los Ángeles Oscuros a emprender la búsqueda a través del tiempo y del espacio de la batalla final que supondrá su redención o su condenación definitiva.">Angeles Oscuros</abbr></td>
+                    <td><abbr title="Lion fue robado de los laboratorios y expulsado al espacio como los demás Primarcas, y acabó por aterrizar en el planeta Caliban, un mundo bello pero contaminado por el Caos debido a su proximidad al Ojo del Terror.
+                    La cápsula de Jonson aterrizó en un área remota de Caliban, lejos de cualquier asentamiento humano. No hay registros sobre cómo sobrevivió o a qué se enfrentó en la jungla durante sus primeros años, un territorio en el que cualquier hombre normal no sobreviviría más de diez minutos. Vivió una década en la selva, solo y sin nadie que le ayudase.
+                    Al final de esos diez años se encontró con sus primeros humanos, un grupo de caballeros de La Orden. Mientras los caballeros se preparaban para matar a Jonson, uno de ellos, llamado Luther, sintió algo especial en este aparentemente salvaje ser, y evitó que los demás caballeros le atacasen. Luther y el grupo trajeron a Jonson de vuelta a su Fortaleza Monasterio y lo bautizaron como Lion El'Jonson, León Hijo del Bosque, por el lugar y las circunstancias en que lo habían hallado.
+                    Jonson creció rápidamente y se adaptó a las costumbres de los habitantes del planeta, aprendiendo a hablar a una velocidad impresionante, aunque nunca contó nada sobre sus primeros diez años de vida. Luther y Jonson formaron una fuerte amistad, complementándose en habilidades y capacidades. Fue entonces cuando se descubrieron los principales dones de Jonson: era un estratega brillante, y nada podía detenerlo cuando se decidía a seguir un curso de acción. Juntos, los dos guerreros subieron por los rangos de La Orden y extendieron la fama de La Orden gracias a las misiones que emprendieron juntos.">Lion El'Jonson</abbr></td>
                 </tr>
                 <tr>
                     <td>II</td>
@@ -56,43 +59,49 @@
                 </tr>
                 <tr>
                     <td>III</td>
-                    <td>Hijos Del Emperador</td>
-                    <td>Fulgrim</td>
+                    <td><abbr title="Los Hijos del Emperador fueron la única Legión que portó el nombre del Emperador y su estandarte personal, la gran Aquila Palatina, que les fue concedida por su propia mano. Pocos fueron tan honrados entre las Legiones de Marines Espaciales y tuvieron tan escasos motivos para traicionar a un padre que ellos. Dados los aplausos y elogios que les fueron dedicados, pocos podían dudar de que eran la encarnación de lo que el Emperador quería que fuesen las Legiones Astartes: nobles en la acción y en el aspecto, excelentes en todo, fuertes, civilizados, firmes de propósito y leales hasta la médula. Desde esta cima descendieron en traición hasta ser las criaturas más bajas y viles, esclavizadas por el orgullo y consumidas por deseos que ningún poder natural podía satisfacer. La historia de sus hazañas antes de su caída no es simplemente una historia de lo que fueron y de lo que lograron, sino como en el caso de otros que se volvieron Traidores, una historia de cómo crearon su propia perdición, pues como dicen los antiguos textos, el orgullo precede a la destrucción, y rara vez este proverbio ha sido más adecuado que cuando se ha aplicado a la III Legión de los Marines Espaciales. La traición cambió a los Hijos del Emperador hasta hacerlos irreconocibles: su búsqueda de la perfección se convirtió en un hambre de excesos, y el orden finalmente equilibrado de la estructura de la Legión se retorció hasta romperse.">Hijos Del Emperador</abbr></td>
+                    <td><abbr title="Fulgrim, también conocido antes de la Herejía de Horus como el Fénix, es el Primarca de la Legión Traidora de los Hijos del Emperador.
+                    Considerado por muchos como el más bello de los Primarcas, tenía una larga cabellera blanca-plateada, y un carácter un tanto engreido, pues toda su vida estaba dedicada a la búsqueda de la perfección absoluta: física, mental y espiritual.
+                    Aprovechando esta debilidad, un Gran Demonio de Slaanesh poseyó su cuerpo durante un tiempo, pero Fulgrim utilizó su aprisionamiento espiritual para explorar con mayor profundidad el poder del Caos, y acabó por derrotar al Demonio y aprisionarlo para recuperar el control de su cuerpo. Fulgrim emergió de aquella experiencia incluso más entregado a la persecución de la senda de las sensaciones ofrecida por Slaanesh y el Caos, y tras la Herejía su devoción fue recompensada con la ascensión al rango de Príncipe Demonio del Dios del Placer.">Fulgrim</abbr></td>
                 </tr>
                 <tr>
                     <td>IV</td>
-                    <td>Guerreros De Hierro</td>
-                    <td>Perturabo</td>
+                    <td><abbr title="Los Guerreros de Hierro (Iron Warriors en inglés) fueron la IV Legión de Marines Espaciales creada por el Emperador para su Gran Cruzada. Su mundo natal era Olympia, y su Primarca, Perturabo. Durante la Herejía de Horus, se unieron al Señor de la Guerra y traicionaron al Imperio, y actualmente tienen su base en Medrengard, en el Ojo del Terror.">Guerreros De Hierro</abbr></td>
+                    <td><abbr title="Perturabo es el Primarca de la Legión Traidora de los Guerreros de Hierro. Él y su Legión se aliaron con el Caos durante la Herejía de Horus, y posteriormente fue ascendido al rango de Príncipe Demonio. Él, como sus Guerreros de Hierro, poseía una afinidad natural hacia el uso intensivo de la tecnología en combate y una lógica fría y desprovista de emociones al tratar con otras personas, pero carecía de fuerza de fe tanto en el Emperador como en los Dioses del Caos a los que luego juraría lealtad.">Perturabo</abbr></td>
                 </tr>
                 <tr>
                     <td>V</td>
-                    <td>Cicatrices Blancas</td>
-                    <td>Jaghatai Khan</td>
+                    <td><abbr title="Los Cicatrices Blancas (White Scars en inglés) fueron la V Legión de Marines Espaciales que el Emperador creó para su Gran Cruzada. Su Primarca era Jaghatai Khan, y su mundo natal Mundus Planus (conocido por los indígenas como Chogoris). Durante la Herejía de Horus estuvieron a punto de unirse al Señor de la Guerra, pero las acciones de la Legión Alfa y la Guardia de la Muerte les hicieron reconocer la justicia de la causa imperial, por lo que fueron una de las tres Legiones que defendieron Terra de las Legiones Traidoras durante el Asedio del Palacio Imperial.">Cicatrices Blancas</abbr></td>
+                    <td><abbr title="Jaghatai Khan es el Primarca desaparecido de la Legión de Marines Espaciales de los Cicatrices Blancas. Desapareció junto con toda la 1ª Hermandad de los Cicatrices Blancas mientras perseguía a una Kábala de Eldars Oscuros cerca de la Fisura Disforme conocida como el Torbellino.">Jaghatai Khan</abbr></td>
                 </tr>
                 <tr>
                     <td>VI</td>
-                    <td>Lobos Espaciales</td>
-                    <td>Leman Russ</td>
+                    <td><abbr title="Los Lobos Espaciales (Space Wolves en inglés) fueron una de las 20 Legiones, en concreto la VI Legión, de Marines Espaciales creadas por el Emperador para su Gran Cruzada. Su Primarca era Leman Russ, el Rey Lobo de Fenris. Los Vlka Fenryka (como se llaman a sí mismos en el dialecto propio de Juvjk, podría traducirse por Lobos de Fenris) se mantuvieron ferozmente leales al Imperio durante la Herejía de Horus, castigando a los Mil Hijos por su abuso de los poderes psíquicos y enfrentándose a las Legiones Traidoras, especialmente la Legión Alfa. Durante la Gran Purga se negaron de plano a someterse al Codex Astartes de Roboute Guilliman, y desde la desaparición de su Primarca montan guardia en torno al Ojo del Terror para impedir que los Marines Espaciales del Caos (y los hijos de Magnus el Rojo en particular) ataquen a los súbditos del Padre de Todas las Cosas.">Lobos Espaciales</abbr></td>
+                    <td><abbr title="Leman Russ, también conocido como el Rey Lobo y el Señor del Invierno y la Ruina, es el Primarca, actualmente desaparecido, del Capítulo de Marines Espaciales de los Lobos Espaciales.
+                    Dirigió a la Legión de los Lobos Espaciales durante la Gran Cruzada y la Herejía de Horus, y es famoso en la historia imperial por su odio hacia los poderes psíquicos y la hechicería, a los que consideraba deshonrosos.">Leman Russ</abbr></td>
                 </tr>
                 <tr>
                     <td>VII</td>
-                    <td>Puños Imperiales</td>
-                    <td>Rogal Dorn</td>
+                    <td><abbr title="Los Puños Imperiales (Imperial Fists en inglés) fueron la VII Legión de Marines Espaciales creada por el Emperador para su Gran Cruzada. Su Primarca era Rogal Dorn. La Legión se mantuvo en el bando leal durante la Herejía de Horus, y tras esta, se reorganizó según el Codex Astartes y se dividió en Capítulos. El Capítulo ha mantenido y mantiene una intensa rivalidad con los Guerreros de Hierro incluso desde antes de la Herejía, pues ambos comparten su especialización en el asedio. Los Puños Imperiales son reconocidos como uno de los Capítulos más leales al Emperador, y fueron claves a la hora de mantener unido al Imperio durante los tiempos más sombríos mediante su famosamente testaruda resistencia.">Puños Imperiales</abbr></td>
+                    <td><abbr title="Rogal Dorn fue el Primarca de la Legión de Marines Espaciales de los Puños Imperiales y uno de los mayores héroes de la historia del Imperio de la Humanidad. Dorn construyó las defensas del Palacio Imperial en la cordillera terrana del Himalaya que serían tan dolorosamente puestas a prueba por las fuerzas del Caos durante el clímax de la Herejía de Horus, la terrible Batalla de Terra. Supuestamente, Rogal Dorn murió luchando a bordo de una nave de Marines Espaciales del Caos a finales del M31, tras atacar a la flota de la 1ª Cruzada Negra con un ejército ampliamente superado en número. Viendo la importancia de atacar a la flota enemiga mientras aún se estaba preparando para invadir el espacio imperial, basó su estrategia en ataques de guerrilla hasta que llegasen sus refuerzos. Se cree que Dorn fue eliminado a bordo del Acorazado del Caos clase Saqueador Espada de Sacrilegio tras dirigir un ataque desesperado contra su puente de mando, pero de hecho los Puños Imperiales y sus Capítulos Sucesores creen que Dorn aún está vivo en alguna parte y que aún puede que regrese cuando el Imperio más lo necesite">Rogal Dorn</abbr></td>
                 </tr>
                 <tr>
                     <td>VIII</td>
-                    <td>Amos De La Noche</td>
-                    <td>Konrad Curze</td>
+                    <td><abbr title="Los Amos de la Noche (Night Lords en inglés) eran la VIII Legión de las Legiones Astartes originales de la Gran Cruzada. Su Primarca era Konrad Curze, también llamado Acechante Nocturno. La Legión se volvió traidora durante la Herejía de Horus, tras lo cual se abrió camino a través del espacio imperial en una sangrienta campaña que culminó con la muerte de su Primarca a manos de una Asesina imperial. Después de la pérdida de su Primarca los Amos de la Noche se han establecido en el Ojo del Terror y actualmente operan como partidas de guerra divididas en escuadras llamadas Garras. Sus motivaciones básicas son causar el terror más absoluto en toda forma de vida y la piratería.">Amos De La Noche</abbr></td>
+                    <td><abbr title="Konrad Curze, más conocido como el Acechante Nocturno, fue uno de los 20 Primarcas sobrehumanos creados por el Emperador, y el líder de la VIII Legión de Marines Espaciales, los Amos de la Noche.
+                    Durante la Herejía de Horus se unió al Architraidor Señor de la Guerra en su rebelión contra el Imperio. Poco después de la derrota del Asedio de Terra, fue asesinado en la Cámara de los Lamentos de su palacio en Tsagualsa (en la Franja Este) por una Asesina Callidus llamada M'Shen.">Konrad Kurze</abbr></td>
                 </tr>
                 <tr>
                     <td>IX</td>
-                    <td>Angeles Sangrientos</td>
-                    <td>Sanguinius</td>
+                    <td><abbr title="Los Ángeles Sangrientos (Blood Angels en inglés) fueron la IX Legión de Marines Espaciales que el Emperador creó para su Gran Cruzada. Su Primarca era Sanguinius, y su mundo natal es Baal.
+                    En combate, la Legión de los Ángeles Sangrientos era la encarnación de la ira del Emperador hacia aquellos que rechazaban el regalo de la Unidad. Liderados por su angelical Primarca Sanguinius, su venida no era nada menos que un juicio apocalíptico descargado sobre los culpables desde las alturas, y descendiendo de los cielos sobre alas de fuego, la Legión conquistó mundos humanos perdidos tanto por su furia sobrenatural como por el terror y el pasmo que engendraba.">Angeles Sangrientos</abbr></td>
+                    <td><abbr title="Sanguinius, también llamado en ocasiones El Ángel, fue el Primarca de la Legión de Marines Espaciales de los Ángeles Sangrientos. Fue asesinado durante el clímax de la Herejía de Horus, la Batalla de Terra, defendiendo al Emperador de la Humanidad del Señor de la Guerra Horus a bordo de la nave insignia de este, la Barcaza de Batalla Espíritu Vengativo. Aunque el Señor de la Guerra mató a Sanguinius, la leyenda sostiene que fue el agujero hecho en la armadura de Horus por Sanguinius lo que permitió al Emperador matar al Architraidor y así evitar que la Humanidad cayese en manos de los Poderes Ruinosos del Caos.">Sanguinius</abbr></td>
                 </tr>
                 <tr>
                     <td>X</td>
-                    <td>Manos De Hierro</td>
-                    <td>Ferrus Manus</td>
+                    <td><abbr title="Los Manos de Hierro (Iron Hands en inglés) fueron la X Legión de Marines Espaciales creada por el Emperador para su Gran Cruzada. Su Primarca era Ferrus Manus, y su mundo natal, Medusa. Durante la Herejía de Horus, sufrieron graves bajas durante la Masacre del Desembarco en Istvaan V, incluido su Primarca, que murió a manos de Fulgrim de los Hijos del Emperador.
+                    Han sido implacables devotos del Emperador desde tiempos legendarios, cuando los Primarcas, seres como dioses, caminaban entre los hombres. Durante innumerables siglos, los Manos de Hierro han permanecido inamovibles en su fe y creencias.">Manos De Hierro</abbr></td>
+                    <td><abbr title="Ferrus Manus, también conocido como la Gorgona, fue el Primarca de la Legión de Marines Espaciales de los Manos de Hierro, y un maestro herrero conocido por sus armas capaces de inspirar admiración en cualquiera que las viese.">Ferrus Manus</abbr></td>
                 </tr>
                 <tr>
                     <td>XI</td>
@@ -101,48 +110,48 @@
                 </tr>
                 <tr>
                     <td>XII</td>
-                    <td>Devoradores De Mundos</td>
-                    <td>Angron</td>
+                    <td><abbr title="Los Devoradores de Mundos (originalmente llamados Perros de la Guerra; World Eaters en inglés) fueron la XII Legión de Marines Espaciales que el Emperador creó para su Gran Cruzada. Su Primarca es Angron, el Ángel Rojo, actualmente un Príncipe Demonio de Khorne. La Legión se unió a Horus durante la Herejía, y se entregó al culto a Khorne. Actualmente reside, dividida en multitud de partidas de guerra enfrentadas, dentro del Ojo del Terror.">Devoradores De Mundos</abbr></td>
+                    <td><abbr title="Angron (también conocido como el Ángel Rojo) es el Primarca de la Legión de los Devoradores de Mundos. Sucumbió al influjo del Caos durante la Herejía de Horus, convirtiéndose más tarde en un Príncipe Demonio de Khorne.">Angron</abbr></td>
                 </tr>
                 <tr>
                     <td>XIII</td>
-                    <td>Ultramarines</td>
-                    <td>Roboute Guilliman</td>
+                    <td><abbr title="JLos Ultramarines fueron la XIII Legión de Marines Espaciales creada por el Emperador para su Gran Cruzada. Su Primarca era Roboute Guilliman. La Legión se mantuvo en el bando leal durante la Herejía de Horus, y tras esta, se reorganizó según el Codex Astartes y se dividió en Capítulos.">Ultramarines</abbr></td>
+                    <td><abbr title="Además de las hazañas de su Legión durante la Gran Cruzada, Guilliman obtuvo mayor renombre tras la Herejía de Horus por sus esfuerzos para preservar el Imperio. Entre sus logros más destacables está la creación del Codex Astartes. El Primarca es uno de los héroes y guerreros más poderosos de la época de la Gran Cruzada. Sus facciones indicaban un gran valor y una gran fortaleza.">Roboute Guilliman</abbr></td>
                 </tr>
                 <tr>
                     <td>XIV</td>
-                    <td>Guardia De La Muerte</td>
-                    <td>Mortarion</td>
+                    <td><abbr title="La Guardia de la Muerte; originalmente Incursores del Crepúsculo (Death Guard en inglés) fue la XIV Legión de Marines Espaciales que el Emperador creó para su Gran Cruzada, y fue una de las nueve que traicionaron al Imperio durante la Herejía de Horus, convirtiéndose en Marines Espaciales del Caos.">Guardia De La Muerte</abbr></td>
+                    <td><abbr title="Mortarion (conocido también como el Señor de la Muerte y Príncipe de la Decadencia) fue uno de los veinte Primarcas. Se le dio el mando de la Legión de la Guardia de la Muerte con la llegada del Emperador a su planeta, pero posteriormente se rebeló contra él y se pasó al bando del Caos durante la Herejía de Horus. Actualmente es un Primarca Demonio al servicio de Nurgle.">Mortarion</abbr></td>
                 </tr>
                 <tr>
                     <td>XV</td>
-                    <td>Mil Hijos</td>
-                    <td>Magnus El Rojo</td>
+                    <td><abbr title="Los Mil Hijos (Thousand Sons en inglés) fueron la XV Legión de Marines Espaciales que el Emperador creó para su Gran Cruzada. Su Primarca era Magnus el Rojo, y su mundo natal, Prospero. Durante la Herejía de Horus, fueron acusados de hechicería y atacados por los Lobos Espaciales, de modo que se entregaron al Caos y lucharon contra el Imperio. Han jurado lealtad a Tzeentch, el Dios del Caos del cambio, la intriga y la hechicería.">Mil Hijos</abbr></td>
+                    <td><abbr title="Magnus el Rojo, Primarca de la Legión Traidora de los Mil Hijos, es uno de los pocos Primarcas que siguen vivos, y actualmente es un Príncipe Demonio extremadamente poderoso al servicio del Dios del Caos Tzeentch. También era conocido como el Rey Carmesí o el Cíclope Rojo. Un gigante en términos tanto físicos como psíquicos, el Primarca de piel cobriza poseía una tremenda habilidad psíquica innata, y constantemente estudiaba e intentaba entender la Disformidad, convirtiéndose en un hechicero de formidable poder. Magnus creía que sería capaz de controlar el Gran Océano de energía psíquica que era la Disformidad, aunque su prodigiosa y descuidada aplicación de sus dones psíquicos acabó por hacerle caer en desgracia ante su padre, el Emperador, así como ante la mayor parte de sus hermanos Primarcas. Su inmadurez psíquica, su imprudencia y su arrogancia también causaron su perdición, pues al final provocaron su condenación y servicio al Dios del Cambio.">Magnus El Rojo</abbr></td>
                 </tr>
                 <tr>
                     <td>XVI</td>
-                    <td>Lobos Lunares</td>
-                    <td>Horus Lupercal</td>
+                    <td><abbr title="Los Lobos Lunares (Luna Wolves en inglés) fueron la XVI Legión de Marines Espaciales que el Emperador creó para su Gran Cruzada. Su Primarca era Horus, que luego sería ascendido a Señor de la Guerra y los renombraría Hijos de Horus (Sons of Horus en inglés). En la Herejía, los Hijos de Horus se unieron a la rebelión contra el Imperio, y tras su derrota, se exiliaron al Ojo del Terror, donde volvieron a cambiar su nombre por el de Legión Negra (Black Legion en inglés).">Lobos Lunares</abbr></td>
+                    <td><abbr title="Horus, también conocido en vida como Lupercal por los Astartes de su Legión, los Lobos Lunares, fue uno de los veinte Primarcas genéticamente diseñados y creados por el Emperador de la Humanidad a partir de la base de su propio ADN antes del comienzo de la Gran Cruzada para liderar a sus ejércitos del recién nacido Imperio del Hombre.">Horus Lupercal</abbr></td>
                 </tr>
                 <tr>
                     <td>XVII</td>
-                    <td>Portadores De La Palabra</td>
-                    <td>Lorgar</td>
+                    <td><abbr title="Los Portadores de la Palabra (originalmente conocidos como Heraldos Imperiales; Word Bearers en inglés) fueron la XVII Legión de Marines Espaciales creada por el Emperador para su Gran Cruzada. Su Primarca era Lorgar, quien creía que el Emperador era un Dios e hizo que su Legión construyese grandes catedrales en cada mundo que conquistaban. Al serles recriminado su lento avance, los Portadores de la Palabra se entregaron al Caos, e iniciaron una serie de sucesos que desembocarían en la Herejía de Horus. Tras su derrota, huyeron y se establecieron en Sicarus (en el Ojo del Terror) y el mundo forja de Ghalmek (en el Torbellino). Adoran al Caos Absoluto.">Portadores De La Palabra</abbr></td>
+                    <td><abbr title="Lorgar Aureliano, también llamado el Urizen antes de la Herejía de Horus, es un Príncipe Demonio del Caos Absoluto y el Primarca de la Legión Traidora de los Portadores de la Palabra. Siempre determinado a elevar a la Humanidad a través de una profunda fe en lo divino; una vez que el Emperador de la Humanidad rechazó sus intentos de adoración, Lorgar descubrió nuevos dioses, los Poderes Ruinosos del Caos, más dignos de su devoción, durante su infame Peregrinaje. Fue el primer Primarca de las Legiones de Marines Espaciales en caer ante la corrupción del Caos antes de la Herejía de Horus y fue quien ordenó la corrupción del Señor de la Guerra Horus. Él y su gran Legión Traidora de Marines Espaciales del Caos, los Portadores de la Palabra, pueden ser encontrados hoy en el Mundo Demoníaco de Sicarus dentro del Ojo del Terror.">Lorgar</abbr></td>
                 </tr>
                 <tr>
                     <td>XVIII</td>
-                    <td>Salamandras</td>
-                    <td>Vulkan</td>
+                    <td><abbr title="Los Salamandras (Salamanders en inglés) fueron la XVIII Legión de Marines Espaciales que el Emperador creó para su Gran Cruzada. Su Primarca es Vulkan, y su hogar, el mundo volcánico de Nocturne. Durante la Herejía de Horus, combatieron de parte del Imperio, pero resultaron destrozados casi por completo en la Masacre del Desembarco de Istvaan V, y actualmente aún siguen siendo una fuerza pequeña en comparación con otros Capítulos.">Salamandras</abbr></td>
+                    <td><abbr title="Vulkan fue uno de los 20 Primarcas sobrehumanos creados por el Emperador de la Humanidad a partir de su propio ADN para dirigir su Gran Cruzada y reunificar a los pueblos dispersos de la Humanidad dentro del Imperio del Hombre. La XVIII Legión de Marines Espaciales, creada a partir del genoma de Vulkan, fue bautizada como los Salamandras en referencia a los grandes reptiles nativos resistentes al fuego de su planeta natal volcánico, Nocturne, y en memoria del concurso legendario entre el Emperador y Vulkan que incluyó la muerte de estas peligrosas bestias. El resultado de este concurso había revelado la identidad del Emperador y reunido a Vulkan con el Imperio.">Vulkan</abbr></td>
                 </tr>
                 <tr>
                     <td>XIX</td>
-                    <td>Guardia Del Cuervo</td>
-                    <td>Corax</td>
+                    <td><abbr title="La Guardia del Cuervo (Raven Guard en inglés) fue una de las Legiones Astartes originales. Su Primarca es Corvus Corax, y su hogar, Deliverance (originalmente llamada Lycaeus), una luna que orbita el Mundo Colmena de Kiavahr. La Guardia del Cuervo está especializada en la guerra de guerrillas, atacando por detrás de las líneas enemigas con aplicaciones precisas de fuerza. La Legión fue devastada al inicio de la Herejía de Horus, y sobrevivió sólo mediante las medidas más desesperadas.">Guardia Del Cuervo</abbr></td>
+                    <td><abbr title="Después de la destrucción casi total de su XIX Legión durante la Masacre del Desembarco en Istvaan V al inicio de la Herejía de Horus, Corax estaba desesperado por reconstruir su Legión. Con el permiso del Emperador, él y sus Astartes se adentraron en las profundidades del Palacio Imperial para recuperar el avanzado conocimiento genético que el Emperador había utilizado para crear los Primarcas. Corax, a continuación, hizo uso de estas técnicas y recuperó la plantilla genética original del Primarca para acelerar el desarrollo de nuevos Astartes de la Guardia del Cuervo. Las repercusiones de esas acciones volvió a perseguirlo, haciendo que Corax concediese finalmente la Paz del Emperador a todos los retorcidos mutantes que surgieron como resultado de sus experimentos. Corax desapareció luego en el Ojo del Terror, en busca de penitencia por su vergüenza. Su paradero y estado actuales siguen siendo desconocidas para el Capítulo y el Imperio.">Corax</abbr></td>
                 </tr>
                 <tr>
                     <td>XX</td>
-                    <td>Legión Alfa</td>
-                    <td>Alpharius Omegon</td>
+                    <td><abbr title="La Legión Alfa (Alpha Legion en inglés) es la Legión Traidora de la que menos se sabe. Antaño fue la XX Legión Astartes, creada durante la Primera Fundación por el Emperador de la Humanidad para llevar a cabo su Gran Cruzada y reunir a toda la raza humana bajo la égida de su Imperio. Son expertos en la infiltración y sus ejércitos contienen a muchos cultistas del Caos además de sus propios Marines Traidores. La Legión Alfa tenía dos Primarcas gemelos, Alpharius y Omegon, el segundo de los cuales era mantenido en secreto para todos excepto los miembros de la XX Legión. Al final de la Herejía de Horus, Roboute Guilliman de los Ultramarines mató supuestamente a uno de los dos, o quizá solo a un doble. A pesar de su aparente adoración al Caos Absoluto, un estudio más a fondo de la historia de la Legión Alfa indica que podría ser la mayor mentira que jamás han difundido en el Imperio y quizá entre las propias fuerzas del Caos.">Legion Alpha</abbr></td>
+                    <td><abbr title="Alpharius (también conocido como el Último Primarca) fueron en realidad dos hermanos gemelos idénticos, y uno de los veinte Primarcas creados por el Emperador de la Humanidad en los primeros tiempos del Imperio de la Humanidad, poco después de la Era de los Conflictos en el 30º Milenio. Al igual que los otros Primarcas, Alpharius y su hermano gemelo Omegon fueron transportados desde el laboratorio genético del Emperador en las Montañas del Himalaya de Terra a través de la Disformidad por los Dioses del Caos, y situados en un lejano mundo en un intento de prevenir el auge del Imperio del Hombre y la expansión de este a través de la Vía Láctea. Alpharius Omegon fue descubierto por el Primarca Horus, y enviado a conocer a su padre a Terra, quien le puso (y en secreto a su hermano) al mando de la XX Legión de los Marines Espaciales, la Legión Alfa, durante la Gran Cruzada del M31.">Alpharius Omegon</abbr></td>
                 </tr>
             </table>
         </article>
@@ -156,5 +165,6 @@
             </li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
