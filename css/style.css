@@ -66,6 +66,7 @@ header{
     color: black;
     font-family: 'Black Ops One';
     grid-area: h1;
+    animation-delay: 2s;
 }
 
 p{
@@ -263,6 +264,20 @@ p{
 #formulario{
     font-family: 'Bebas Neue';
     color: black;
+}
+
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
+
+.animate__rotateOutDownLeft{
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes slidein {
