@@ -251,6 +251,23 @@ p{
     width: 30%;
 }
 
+.cardCenter{
+    display: flex;
+    justify-content: center;
+}
+
+
+#sectionEmperador{
+    background-color: rgb(97, 3, 3);
+}
+
+#sectionEmperador h1{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Black Ops One";
+    color: black;
+}
+
 #sectionRegistro{
     background-color: rgb(97, 3, 3);
 }
