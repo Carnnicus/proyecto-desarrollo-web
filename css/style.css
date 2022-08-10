@@ -1,16 +1,16 @@
-body{
-    background-image: url('../media/back.jpg');
+body {
+  background-image: url("../media/back.jpg");
 }
 
-header{
-    background-color: rgb(136, 4, 4);
-    font-family: 'Black Ops One';
+header {
+  background-color: rgb(136, 4, 4);
+  font-family: "Black Ops One";
 }
 
-.imgLogo{
-    height: 50px;
-    width: 120px;
-    /**grid-area: logo;**/
+.imgLogo {
+  height: 50px;
+  width: 120px;
+  /**grid-area: logo;**/
 }
 
 /**#logIn{
@@ -25,7 +25,6 @@ header{
 #logIn a:hover{
     color: aliceblue;
 }**/
-
 /**#navBar{
     display: flex;
     justify-content: space-around;
@@ -45,324 +44,310 @@ header{
 #navBar li a:hover{
     color: aliceblue;
 }**/
-
-.sectionIndex{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "h1"
-    "p"
-    "video"
-    ;
-    background-color: rgb(97, 3, 3);
+.sectionIndex {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "h1" "p" "video";
+  background-color: rgb(97, 3, 3);
 }
 
-.sectionIndex h1{
-    display: flex;
-    justify-content:center;
-    height: 100px;
-    padding-top: 30px;
-    color: black;
-    font-family: 'Black Ops One';
-    grid-area: h1;
-    animation-delay: 2s;
+.sectionIndex h1 {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  padding-top: 30px;
+  color: black;
+  font-family: "Black Ops One";
+  grid-area: h1;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
-p{
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-    font-family: 'Bebas Neue';
-    font-weight: bold;
-    grid-area: p;
-    animation-duration: 3s;
-    animation-name: slidein;
-    color: black;
-    
+p {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  grid-area: p;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  color: black;
 }
 
 /**img{
     width: 100%;
 }**/
-
 /*.sectionIndex article p{
     padding-bottom: 20px;
     font-family: 'Bebas Neue'
 }*/
-
-#introVideo{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-    grid-area: video;
+#introVideo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  grid-area: video;
 }
 
-#foot{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    background-color:rgb(97, 3, 3);
-    height: 50px;
-    font-family: 'Black Ops One';
+#foot {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  background-color: rgb(97, 3, 3);
+  height: 50px;
+  font-family: "Black Ops One";
 }
 
-#foot ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding-bottom: 30px;
+#foot ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-bottom: 30px;
 }
 
-#foot li a{
-    color: black;
-    text-decoration: none;
+#foot li a {
+  color: black;
+  text-decoration: none;
+}
+#foot li a:hover {
+  color: aliceblue;
 }
 
-#foot a:hover{
+/*#foot a:hover{
     color: aliceblue;
+}*/
+#sectionRazas {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "sectionH1" "razasMenu" "razas";
+  background-color: rgb(97, 3, 3);
 }
 
-#sectionRazas{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "sectionH1"
-    "razasMenu"
-    "razas"
-    ;
-    background-color: rgb(97, 3, 3);
+#razas {
+  grid-area: razas;
 }
 
-#razas{
-    grid-area: razas;
+#razasMenu {
+  padding-top: 30px;
+  list-style: upper-roman;
+  font-family: "Black Ops One";
+  grid-area: razasMenu;
 }
 
-#razasMenu{
-    padding-top: 30px;
-    list-style: upper-roman;
-    font-family: 'Black Ops One';
-    grid-area: razasMenu;
+#razasMenu li a {
+  text-decoration: none;
+  color: black;
 }
 
-#razasMenu li a{
-    text-decoration: none;
-    color: black;
+#sectionRazas h1 {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  font-family: "Black Ops One";
+  color: black;
 }
 
-#sectionRazas h1{
-    display: flex;
-    padding-top: 50px;
-    justify-content: center;
-    font-family: 'Black Ops One';
-    color: black;
+#razasMenu li a:hover {
+  color: aliceblue;
 }
 
-#razasMenu li a:hover{
-    color: aliceblue;
+#sectionRazas h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Black Ops One";
+  text-decoration: overline;
 }
 
-#sectionRazas h2{
-    padding-top: 20px;
-    text-align: center;
-    font-family: 'Black Ops One';
-    text-decoration:overline;
+#imgRazas {
+  height: 455px;
+  width: 728px;
 }
 
-#imgRazas{
-    height: 455px;
-    width: 728px;
+.imgCenter {
+  display: flex;
+  justify-content: center;
 }
 
-.imgCenter{
-    display: flex;
-    justify-content: center;
+#sectionMarines {
+  background-color: rgb(97, 3, 3);
 }
 
-#sectionMarines{
-    background-color: rgb(97, 3, 3);
+#sectionMarines h1 {
+  padding-top: 50px;
+  text-align: center;
+  font-family: "Black Ops One";
+  color: black;
 }
 
-#sectionMarines h1{
-    padding-top: 50px;
-    text-align: center;
-    font-family: 'Black Ops One';
-    color: black;
+#sectionMarines h2 {
+  font-family: "Black Ops One";
+  color: black;
 }
 
-#sectionMarines h2{
-    font-family: 'Black Ops One';
-    color: black;
+#legiones {
+  padding-bottom: 20px;
 }
 
-#legiones{
-    padding-bottom: 20px;
+#legiones th {
+  font-family: "Black Ops One";
+  color: black;
 }
 
-#legiones th{
-    font-family: 'Black Ops One';
-    color: black;
+#legiones td {
+  font-family: "Bebas Neue";
+  color: black;
 }
 
-#legiones td{
-    font-family: 'Bebas Neue';
-    color: black;
+#depurado {
+  text-decoration: line-through;
 }
 
-#depurado{
-    text-decoration: line-through;
+#sectionBooks {
+  background-color: rgb(97, 3, 3);
 }
 
-#sectionBooks{
-    background-color: rgb(97, 3, 3);
+#sectionBooks h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Black Ops One";
+  color: black;
 }
 
-#sectionBooks h1{
-    padding-top: 20px;
-    text-align: center;
-    font-family: 'Black Ops One';
-    color: black;
+#sectionBooks h3 {
+  padding-bottom: 30px;
+  font-family: "Black Ops One";
+  color: black;
 }
 
-#sectionBooks h3{
-    padding-bottom: 30px;
-    font-family: 'Black Ops One';
-    color: black;
+#bookList {
+  padding-top: 20px;
+  font-family: "Black Ops One";
 }
 
-#bookList{
-    padding-top: 20px;
-    font-family: 'Black Ops One';
+#bookList a {
+  color: black;
+  text-decoration: none;
 }
 
-#bookList a{
-    color: black;
-    text-decoration: none;
+#bookList a:hover {
+  color: aliceblue;
 }
 
-#bookList a:hover{
-    color: aliceblue;
+.imgBooks {
+  display: flex;
+  justify-content: flex-start;
+  width: 30%;
 }
 
-.imgBooks{
-    display: flex;
-    justify-content: flex-start;
-    width: 30%;
+.cardCenter {
+  display: flex;
+  justify-content: center;
 }
 
-.cardCenter{
-    display: flex;
-    justify-content: center;
+#sectionEmperador {
+  background-color: rgb(97, 3, 3);
 }
 
-
-#sectionEmperador{
-    background-color: rgb(97, 3, 3);
+#sectionEmperador h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Black Ops One";
+  color: black;
 }
 
-#sectionEmperador h1{
-    text-align: center;
-    padding-top: 20px;
-    font-family: "Black Ops One";
-    color: black;
+#sectionRegistro {
+  background-color: rgb(97, 3, 3);
 }
 
-#sectionRegistro{
-    background-color: rgb(97, 3, 3);
+#sectionRegistro h1, h2, h3 {
+  text-align: center;
+  font-family: "Black Ops One";
+  color: black;
 }
 
-#sectionRegistro h1, h2, h3{
-    text-align: center;
-    font-family: 'Black Ops One';
-    color: black;
+#formulario {
+  font-family: "Bebas Neue";
+  color: black;
 }
-
-#formulario{
-    font-family: 'Bebas Neue';
-    color: black;
-}
-
 
 .zoom {
-    transition: transform .2s; 
-}
- 
-.zoom:hover {
-    transform: scale(1.5); 
+  transition: transform 0.2s;
 }
 
-.animate__rotateOutDownLeft{
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.animate__rotateOutDownLeft {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
-
-@media screen and (min-width: 320px){
-
-    /**header{
-       font-size: 25px;
-       height: 160px;
-       padding-bottom: 80px;
-    }**/
-    
-
-    p{
-        justify-content: center;
-        font-size: 20px;
-    }
-
-    .sectionIndex h1{
-        justify-content: flex-start;
-    }
-
-    #introVideo{
-        justify-content: flex-start;
-    }
-
-    /**img{
-        width: 50%;
-        justify-content: flex-start;
-    }**/
-
-       
-        
-   
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
-
-@media screen and (min-width: 768px){
-
-    header{
-        height: 130px;
-        font-size: 14px;
-        padding-bottom: 20px;
-    }
-    .sectionIndex h1{
-        justify-content: center;
-    }
-
-    p{
-        font-size: 16px;
-    }
-
-    #introVideo{
-        justify-content: center;
-    }
-
-    /**img{
-        width: 96%;
-        justify-content: center;
-    }**/
+@media screen and (min-width: 320px) {
+  /**header{
+     font-size: 25px;
+     height: 160px;
+     padding-bottom: 80px;
+  }**/
+  p {
+    justify-content: center;
+    font-size: 20px;
+  }
+  .sectionIndex h1 {
+    justify-content: flex-start;
+  }
+  #introVideo {
+    justify-content: flex-start;
+  }
+  /**img{
+      width: 50%;
+      justify-content: flex-start;
+  }**/
 }
-    
+@media screen and (min-width: 768px) {
+  header {
+    height: 130px;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .sectionIndex h1 {
+    justify-content: center;
+  }
+  p {
+    font-size: 16px;
+  }
+  #introVideo {
+    justify-content: center;
+  }
+  /**img{
+      width: 96%;
+      justify-content: center;
+  }**/
+}/*# sourceMappingURL=style.css.map */
