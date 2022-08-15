@@ -155,7 +155,7 @@ p {
   color: aliceblue;
 }
 
-#sectionRazas h2 {
+#sectionRazas h2, #sectionRazas #sectionBooks h3, #sectionBooks #sectionRazas h3, #sectionRazas #sectionBooks h1, #sectionBooks #sectionRazas h1, #sectionRazas #legiones th, #legiones #sectionRazas th {
   padding-top: 20px;
   text-align: center;
   font-family: "Black Ops One";
@@ -172,29 +172,24 @@ p {
   justify-content: center;
 }
 
-#sectionMarines {
+#sectionMarines, #sectionBooks h3, #sectionBooks h1, #legiones th {
   background-color: rgb(97, 3, 3);
 }
 
-#sectionMarines h1 {
+#sectionMarines h1, #sectionBooks h3 h1, #sectionBooks h1 h1, #legiones th h1 {
   padding-top: 50px;
   text-align: center;
   font-family: "Black Ops One";
   color: black;
 }
 
-#sectionMarines h2 {
+#sectionMarines h2, #sectionMarines #sectionBooks h3, #sectionBooks #sectionMarines h3, #sectionBooks h3 h2, #sectionBooks h3 h3, #sectionMarines #sectionBooks h1, #sectionBooks #sectionMarines h1, #sectionBooks h3 h1, #sectionBooks h1 h2, #sectionBooks h1 h3, #sectionBooks h1 h1, #sectionMarines #legiones th, #sectionBooks h3 #legiones th, #sectionBooks h1 #legiones th, #legiones #sectionMarines th, #legiones #sectionBooks h3 th, #sectionBooks #legiones h3 th, #legiones #sectionBooks h1 th, #sectionBooks #legiones h1 th, #legiones th h2, #legiones th #sectionBooks h3, #sectionBooks #legiones th h3, #legiones th #sectionBooks h1, #sectionBooks #legiones th h1, #legiones th th {
   font-family: "Black Ops One";
   color: black;
 }
 
 #legiones {
   padding-bottom: 20px;
-}
-
-#legiones th {
-  font-family: "Black Ops One";
-  color: black;
 }
 
 #legiones td {
@@ -213,14 +208,10 @@ p {
 #sectionBooks h1 {
   padding-top: 20px;
   text-align: center;
-  font-family: "Black Ops One";
-  color: black;
 }
 
 #sectionBooks h3 {
   padding-bottom: 30px;
-  font-family: "Black Ops One";
-  color: black;
 }
 
 #bookList {
@@ -263,7 +254,7 @@ p {
   background-color: rgb(97, 3, 3);
 }
 
-#sectionRegistro h1, h2, h3 {
+#sectionRegistro h1, h2, #legiones th, #sectionBooks h1, #sectionBooks h3, h3 {
   text-align: center;
   font-family: "Black Ops One";
   color: black;

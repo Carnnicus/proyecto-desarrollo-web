@@ -55,13 +55,15 @@ body{
     background-color: $colorBody;
 }
 
+$colorPadding: (color: black, padding: 30px);
+
 .sectionIndex{
     h1{
         display: flex;
         justify-content:center;
         height: 100px;
         padding-top: 30px;
-        color: black;
+        color: map-get($colorPadding, color);
         font-family: 'Black Ops One';
         grid-area: h1;
         animation-delay: 2s;
@@ -78,7 +80,7 @@ p{
     grid-area: p;
     animation-duration: 3s;
     animation-name: slidein;
-    color: black;
+    color: map-get($colorPadding, color);
     
 }
 
@@ -94,7 +96,7 @@ p{
 #introVideo{
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: map-get($colorPadding, padding);
     grid-area: video;
 }
 
@@ -112,7 +114,7 @@ p{
         display: flex;
         justify-content: space-around;
         list-style: none;
-        padding-bottom: 30px;
+        padding-bottom: map-get($colorPadding, padding);
     }
 } 
     
@@ -228,8 +230,7 @@ p{
 
 #legiones{
     th{
-        font-family: 'Black Ops One';
-        color: black;
+        @extend #sectionMarines, h2
     } 
 }
 
@@ -252,16 +253,14 @@ p{
     h1{
         padding-top: 20px;
         text-align: center;
-        font-family: 'Black Ops One';
-        color: black;
+        @extend #sectionMarines, h2
     } 
 }
 
 #sectionBooks{
     h3{
         padding-bottom: 30px;
-        font-family: 'Black Ops One';
-        color: black;
+        @extend #sectionMarines, h2
     } 
 }
 
@@ -312,10 +311,14 @@ p{
     background-color:$colorBody;
 }
 
-#sectionRegistro h1, h2, h3{
+@mixin textConf{
     text-align: center;
     font-family: 'Black Ops One';
     color: black;
+}
+
+#sectionRegistro h1, h2, h3{
+    @include textConf()
 }
 
 #formulario{
