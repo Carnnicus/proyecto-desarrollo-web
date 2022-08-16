@@ -76,6 +76,7 @@ p {
   -webkit-animation-name: slidein;
           animation-name: slidein;
   color: black;
+  line-height: 2;
 }
 
 /**img{
@@ -240,7 +241,26 @@ p {
 }
 
 #sectionEmperador {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "empH1" "empIntro" "empMenu" "empSection";
   background-color: rgb(97, 3, 3);
+}
+
+.imgRight {
+  float: right;
+}
+
+.imgLeft {
+  float: left;
+}
+
+#empSection {
+  color: black;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  line-height: 2;
 }
 
 #sectionEmperador h1 {
@@ -248,6 +268,44 @@ p {
   padding-top: 20px;
   font-family: "Black Ops One";
   color: black;
+  grid-area: empH1;
+}
+
+#emperador {
+  display: flex;
+  justify-content: center;
+  grid-area: empIntro;
+  padding-top: 30px;
+}
+
+#empMenu {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Black Ops One";
+  padding-top: 30px;
+  grid-area: empMenu;
+  color: black;
+}
+
+#empMenu ul {
+  list-style: upper-roman;
+}
+
+#empMenu li a {
+  text-decoration: none;
+  color: black;
+}
+#empMenu li a:hover {
+  color: aliceblue;
+}
+
+#empSection h2, #empSection #legiones th, #legiones #empSection th, #empSection #sectionBooks h1, #sectionBooks #empSection h1, #empSection #sectionBooks h3, #sectionBooks #empSection h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Black Ops One";
+  color: black;
+  padding-bottom: 20px;
+  padding-top: 30px;
 }
 
 #sectionRegistro {
