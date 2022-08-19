@@ -310,11 +310,14 @@ p{
 
 .imgRight{
     float: right;
+    animation-delay: 3s;
+    animation-iteration-count:3;
 }
 
 .imgLeft{
     float: left;
 }
+
 
 #empSection{
     color: black;
@@ -376,6 +379,47 @@ p{
         padding-bottom: 20px;
         padding-top: 30px;
     }
+}
+
+#primSection{
+    background-color: $colorBody;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "primH1"
+    "carousel"
+    "primarca"
+    ;
+}
+
+
+
+
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    height: 640px;
+    width: 380px;
+    margin-left: 35%;
+    margin-right:35%;
+    grid-area: carousel;
+}
+
+#primSection{
+    h1{
+        padding-bottom: 30px;
+        grid-area: primH1;
+        @extend #sectionMarines, h2 
+    }
+    h2{
+        padding-top: 60px;
+    }
+}
+
+#primarcas{
+    grid-area: primarca;
 }
 
 #sectionRegistro{
