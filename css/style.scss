@@ -384,26 +384,18 @@ p{
 #primSection{
     background-color: $colorBody;
     align-items: center;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     "primH1"
-    "tabla"
-    "primarca"
+    "primTable"
+    "primarcas"
     ;
 }
 
 
-
-
-
-#tabla{
-    display: flex;
-    justify-content: center;
-    grid-area: tabla;
-}
-
 #primSection{
+    
     h1{
         padding-bottom: 30px;
         grid-area: primH1;
@@ -414,8 +406,14 @@ p{
     }
 }
 
+#primTable{
+    display: flex;
+    justify-content: center;
+    grid-area: primtable;
+}
+
 #primarcas{
-    grid-area: primarca;
+    grid-area: primarcas;
 }
 
 #sectionRegistro{
@@ -429,7 +427,7 @@ p{
 }
 
 #sectionRegistro h1, h2, h3{
-    @include textConf()
+    @include textConf();
 }
 
 #formulario{
