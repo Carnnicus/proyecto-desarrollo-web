@@ -315,19 +315,15 @@ p {
 #primSection {
   background-color: rgb(97, 3, 3);
   align-items: center;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "primH1" "carousel" "primarca";
+  grid-template-areas: "primH1" "tabla" "primarca";
 }
 
-.carousel {
+#tabla {
   display: flex;
   justify-content: center;
-  height: 640px;
-  width: 380px;
-  margin-left: 35%;
-  margin-right: 35%;
-  grid-area: carousel;
+  grid-area: tabla;
 }
 
 #primSection h1 {
