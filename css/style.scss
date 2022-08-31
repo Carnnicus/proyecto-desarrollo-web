@@ -381,20 +381,20 @@ p{
     }
 }
 
-#primSection{
-    background-color: $colorBody;
-    align-items: center;
+.primSection{
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     "primH1"
-    "primTable"
+    "primtable"
     "primarcas"
     ;
+    background-color: $colorBody;
 }
 
 
-#primSection{
+.primSection{
     
     h1{
         padding-bottom: 30px;
